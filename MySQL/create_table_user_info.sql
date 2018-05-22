@@ -1,0 +1,8 @@
+CREATE TABLE microposts.user_info (
+    user_id BIGINT UNSIGNED AUTO_INCREMENT NOT NULL PRIMARY KEY,
+    user_name VARCHAR(127) NOT NULL,
+    mail_address VARCHAR(255) NOT NULL,
+    password VARCHAR(255) NOT NULL,
+    created_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    logined_at TIMESTAMP NOT NULL
+);
